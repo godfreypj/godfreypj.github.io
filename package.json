@@ -1,6 +1,6 @@
 {
     "homepage": "https://godfreypj.github.io/godfreypj.github.io",
-    "name": "godfreypj.github.io",
+    "name": "godfreypj-app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
