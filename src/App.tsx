@@ -1,6 +1,6 @@
-import logo from './assets/logo.svg';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import PhotoGrid from './PhotoGrid';
 import theme from './theme';
 import { Grid, CssBaseline, Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Box sx={{ flexGrow: 1 }}>
             <Grid container justifyContent="center">
-              <img src={logo} className="main-logo" alt="logo" />
+              <PhotoGrid />
             </Grid>
           </Box>
           <Footer />
