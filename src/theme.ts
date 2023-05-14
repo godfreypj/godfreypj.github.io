@@ -20,6 +20,9 @@ const theme = createTheme({
       light: '#f5ffee',
       dark: '#9afe01',
     },
+    background: {
+      default: '#DDDBC0',
+    },
   },
 });
 

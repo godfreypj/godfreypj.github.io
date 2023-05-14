@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import theme from './theme';
+import { Grid, CssBaseline, Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import './App.css';
 
@@ -9,24 +10,18 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Header />
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>yourface</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
-        </div>
-        <Footer />
+        <CssBaseline />
+        <Box
+          sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+        >
+          <Header />
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container justifyContent="center">
+              <img src={logo} className="main-logo" alt="logo" />
+            </Grid>
+          </Box>
+          <Footer />
+        </Box>
       </ThemeProvider>
     </>
   );
