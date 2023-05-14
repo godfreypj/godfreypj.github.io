@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-import PhotoGrid from './PhotoGrid';
+import PhotoGrid from './components/PhotoGrid';
 import theme from './theme';
 import { Grid, CssBaseline, Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';

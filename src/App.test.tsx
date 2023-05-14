@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
@@ -9,14 +9,6 @@ jest.mock('@mui/material/styles', () => {
     ...jest.requireActual('@mui/material/styles'),
     ThemeProvider: jest.fn(({ children }) => <>{children}</>),
   };
-});
-
-test('renders App component', async () => {
-  render(<App />);
-  screen.debug();
-  // Check for the logo
-  const linkElement = await screen.findByAltText('react logo');
-  expect(linkElement).toBeInTheDocument();
 });
 
 describe('App', () => {

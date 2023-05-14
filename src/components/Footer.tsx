@@ -10,7 +10,7 @@ export default function Footer() {
     >
       <Container maxWidth="lg">
         <Typography variant="body1" align="center">
-          My App © {new Date().getFullYear()}
+          godfreypj © {new Date().getFullYear()}
         </Typography>
       </Container>
     </Box>
