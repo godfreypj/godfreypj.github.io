@@ -23,3 +23,13 @@ We have used `npx create-react-app my-app --template typescript` to build our ap
 It is deployed using `gh-pages`
 
 [npm: gh-pages](https://www.npmjs.com/package/gh-pages)
+
+Using `eslint` and `prettier` for linting and best practices:
+
+[Prettier documentation](https://prettier.io/docs/en/index.html)
+
+[eslint documentation](https://eslint.org/docs/user-guide/getting-started).
+
+And of course, our component library will be MUI, using Material Design:
+
+[MUI React Docs](https://mui.com/getting-started/installation/)
