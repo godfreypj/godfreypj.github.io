@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import PhotoGrid from './components/PhotoGrid';
 import darkTheme from './themes/darkTheme';
 import lightTheme from './themes/lightTheme';
-import { Grid, CssBaseline, Box, Button, Paper } from '@mui/material';
+import { Grid, CssBaseline, Box, Paper } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import './App.css';
@@ -22,9 +22,11 @@ function App() {
         <Box
           sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
         >
-          <Header />
+          <Header
+            toggleTheme={toggleTheme}
+            customColor={theme.palette.customTextColor}
+          />
           <Box sx={{ flexGrow: 1 }} justifyContent="center">
-            <Button onClick={toggleTheme}>Toggle Theme</Button>
             <Paper className="main-content">
               <Grid container justifyContent="center">
                 <PhotoGrid />

@@ -12,12 +12,18 @@ import {
 } from '@mui/material/';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function Header() {
+interface HeaderProps {
+  toggleTheme: () => void;
+  customColor: string;
+}
+
+export default function Header({ toggleTheme, customColor }: HeaderProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const menuItems = [
     { label: 'About', onClick: () => console.log('clicked about') },
     { label: 'Gallery', onClick: () => console.log('clicked gallery') },
     { label: 'Projects', onClick: () => console.log('clicked projects') },
+    { label: 'Toggle Theme', onClick: toggleTheme },
   ];
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -50,11 +56,10 @@ export default function Header() {
                 {/* Hamburger menu for mobile mode */}
                 <IconButton
                   edge="start"
-                  color="inherit"
                   aria-label="menu"
                   onClick={handleClick}
                 >
-                  <MenuIcon />
+                  <MenuIcon sx={{ color: customColor }} />
                 </IconButton>
                 <Menu
                   anchorEl={anchorEl}
@@ -62,7 +67,11 @@ export default function Header() {
                   onClose={handleClose}
                 >
                   {menuItems.map((item) => (
-                    <MenuItem key={item.label} onClick={item.onClick}>
+                    <MenuItem
+                      key={item.label}
+                      onClick={item.onClick}
+                      sx={{ color: customColor }}
+                    >
                       {item.label}
                     </MenuItem>
                   ))}

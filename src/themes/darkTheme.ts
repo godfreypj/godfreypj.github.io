@@ -1,7 +1,17 @@
 import { createTheme } from '@mui/material/styles';
 
+declare module '@mui/material/styles' {
+  interface Palette {
+    customTextColor: string;
+  }
+  interface PaletteOptions {
+    customTextColor?: string;
+  }
+}
+
 const darkTheme = createTheme({
   palette: {
+    customTextColor: 'rgba(255,253,208,0.71)',
     primary: {
       main: 'rgba(201,109,5,0.84)',
     },

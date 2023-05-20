@@ -15,7 +15,7 @@ describe('App', () => {
   it('passes the correct theme prop to ThemeProvider', () => {
     render(<App />);
     expect(ThemeProvider).toHaveBeenCalledWith(
-      expect.objectContaining({ darkTheme }),
+      expect.objectContaining({ theme: darkTheme }),
       expect.anything()
     );
   });
