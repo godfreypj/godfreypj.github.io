@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import App from './App';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
+import darkTheme from './themes/darkTheme';
 
 // Mock the theme provider
 jest.mock('@mui/material/styles', () => {
@@ -15,7 +15,7 @@ describe('App', () => {
   it('passes the correct theme prop to ThemeProvider', () => {
     render(<App />);
     expect(ThemeProvider).toHaveBeenCalledWith(
-      expect.objectContaining({ theme }),
+      expect.objectContaining({ theme: darkTheme }),
       expect.anything()
     );
   });
