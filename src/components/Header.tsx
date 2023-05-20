@@ -28,7 +28,7 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" data-testid="Header">
       <Toolbar>
         <Box sx={{ width: '100%', px: '10%' }}>
           <Grid container spacing={2} alignItems="center">
