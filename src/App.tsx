@@ -1,12 +1,20 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PhotoGrid from './components/PhotoGrid';
-import theme from './theme';
-import { Grid, CssBaseline, Box, Card } from '@mui/material';
+import darkTheme from './themes/darkTheme';
+import lightTheme from './themes/lightTheme';
+import { Grid, CssBaseline, Box, Card, Button } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState(darkTheme);
+
+  const toggleTheme = () => {
+    setTheme(theme === darkTheme ? lightTheme : darkTheme);
+  };
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -16,7 +24,11 @@ function App() {
         >
           <Header />
           <Box sx={{ flexGrow: 1 }} justifyContent="center">
-            <Card className="main-content">
+            <Button onClick={toggleTheme}>Toggle Theme</Button>
+            <Card
+              className="main-content"
+              sx={{ bgcolor: theme.palette.background.default }}
+            >
               <Grid container justifyContent="center">
                 <PhotoGrid />
               </Grid>
