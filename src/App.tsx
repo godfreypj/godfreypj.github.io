@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import PhotoGrid from './components/PhotoGrid';
 import darkTheme from './themes/darkTheme';
 import lightTheme from './themes/lightTheme';
-import { Grid, CssBaseline, Box, Card, Button } from '@mui/material';
+import { Grid, CssBaseline, Box, Button, Paper } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import './App.css';
@@ -25,14 +25,11 @@ function App() {
           <Header />
           <Box sx={{ flexGrow: 1 }} justifyContent="center">
             <Button onClick={toggleTheme}>Toggle Theme</Button>
-            <Card
-              className="main-content"
-              sx={{ bgcolor: theme.palette.background.default }}
-            >
+            <Paper className="main-content">
               <Grid container justifyContent="center">
                 <PhotoGrid />
               </Grid>
-            </Card>
+            </Paper>
           </Box>
           <Footer />
         </Box>
