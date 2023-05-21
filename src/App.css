@@ -1,12 +1,12 @@
 .main-logo {
   height: 40vmin;
-  display: 'flex';
-  justify-content: 'center';
-  align-items: 'center';
-  height: '100vh';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .main-content {
   height: 100vh;
-  margin: 0 10vh;
+  margin: 0 20vh;
 }
