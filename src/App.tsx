@@ -7,6 +7,7 @@ import { Grid, CssBaseline, Box, Paper } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import './App.css';
+import React from 'react';
 
 function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -25,6 +26,7 @@ function App() {
           <Header
             toggleTheme={toggleTheme}
             customColor={theme.palette.customTextColor}
+            lightThemeColor={theme.palette.lightThemeColor}
           />
           <Box sx={{ flexGrow: 1 }} justifyContent="center">
             <Paper className="main-content">

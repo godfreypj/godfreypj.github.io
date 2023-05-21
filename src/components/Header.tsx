@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {
   AppBar,
   Toolbar,
@@ -11,13 +11,19 @@ import {
   Hidden,
 } from '@mui/material/';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useTheme } from '@mui/material/styles';
 
 interface HeaderProps {
   toggleTheme: () => void;
   customColor: string;
+  lightThemeColor: string;
 }
 
-export default function Header({ toggleTheme, customColor }: HeaderProps) {
+export default function Header({
+  toggleTheme,
+  customColor,
+  lightThemeColor,
+}: HeaderProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const menuItems = [
     { label: 'About', onClick: () => console.log('clicked about') },
@@ -25,6 +31,10 @@ export default function Header({ toggleTheme, customColor }: HeaderProps) {
     { label: 'Projects', onClick: () => console.log('clicked projects') },
     { label: 'Toggle Theme', onClick: toggleTheme },
   ];
+
+  const theme = useTheme();
+  const isLightTheme = theme.palette.mode === 'light';
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -36,7 +46,7 @@ export default function Header({ toggleTheme, customColor }: HeaderProps) {
   return (
     <AppBar position="static" data-testid="Header">
       <Toolbar>
-        <Box sx={{ width: '100%', px: '10%' }}>
+        <Box sx={{ width: '100%', px: '2%' }}>
           <Grid container spacing={2} alignItems="center">
             <Grid item xs={6} sm={6}>
               <Typography variant="h6" component="div">
@@ -59,9 +69,14 @@ export default function Header({ toggleTheme, customColor }: HeaderProps) {
                   aria-label="menu"
                   onClick={handleClick}
                 >
-                  <MenuIcon sx={{ color: customColor }} />
+                  <MenuIcon
+                    sx={{ color: isLightTheme ? lightThemeColor : customColor }}
+                  />
                 </IconButton>
                 <Menu
+                  sx={{
+                    color: isLightTheme ? lightThemeColor : customColor,
+                  }}
                   anchorEl={anchorEl}
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
