@@ -1,6 +1,7 @@
 import { render, fireEvent } from '@testing-library/react';
 import darkTheme from '../themes/darkTheme';
 import Header from './Header';
+import React from 'react';
 
 describe('Header', () => {
   let toggleTheme: jest.Mock<() => void>,
