@@ -6,6 +6,6 @@
     "@semantic-release/github"
   ],
   "branches": [
-    "gh-pages"
+    "main"
   ]
 }
