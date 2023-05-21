@@ -32,6 +32,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "^5.0.0",
+    "jest-axe": "^7.0.1",
     "prettier": "^2.8.8",
     "react-scripts": "^5.0.1",
     "semantic-release": "^21.0.2",
@@ -59,7 +60,11 @@
     ],
     "moduleNameMapper": {
       "\\.(css|less|scss)$": "identity-obj-proxy"
-    }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test|a11y).[jt]s?(x)"
+    ]
   },
   "eslintConfig": {
     "extends": [
