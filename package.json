@@ -21,6 +21,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
+    "@types/jest-axe": "^3.5.5",
     "@types/jsdom": "^21.1.1",
     "@types/node": "^20.2.1",
     "@types/react": "^18.2.5",
@@ -32,6 +33,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "^5.0.0",
+    "jest-axe": "^7.0.1",
     "prettier": "^2.8.8",
     "react-scripts": "^5.0.1",
     "semantic-release": "^21.0.2",
@@ -59,7 +61,11 @@
     ],
     "moduleNameMapper": {
       "\\.(css|less|scss)$": "identity-obj-proxy"
-    }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test|a11y).[jt]s?(x)"
+    ]
   },
   "eslintConfig": {
     "extends": [

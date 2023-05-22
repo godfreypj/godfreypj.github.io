@@ -1,5 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import darkTheme from '../themes/darkTheme';
+import lightTheme from '../themes/lightTheme';
 import Header from './Header';
 import React from 'react';
 
@@ -11,7 +12,7 @@ describe('Header', () => {
   beforeAll(() => {
     toggleTheme = jest.fn();
     customColor = darkTheme.palette.customTextColor;
-    lightThemeColor = darkTheme.palette.lightThemeColor;
+    lightThemeColor = lightTheme.palette.lightThemeColor;
   });
 
   it('renders the menu items', () => {
