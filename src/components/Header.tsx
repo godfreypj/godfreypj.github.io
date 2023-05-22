@@ -54,14 +54,24 @@ export default function Header({
               </Typography>
             </Grid>
             <Grid item xs={6} sm={6} container justifyContent="flex-end">
-              <Hidden mdDown>
-                {/* Buttons for desktop and tablet mode */}
-                {menuItems.map((item) => (
-                  <MenuItem key={item.label} onClick={item.onClick}>
-                    {item.label}
-                  </MenuItem>
-                ))}
-              </Hidden>
+              <nav
+                role="menubar"
+                className="access-menubar"
+                style={{ display: 'flex', flexDirection: 'row' }}
+              >
+                <Hidden mdDown>
+                  {/* Buttons for desktop and tablet mode */}
+                  {menuItems.map((item) => (
+                    <MenuItem
+                      role="menuitem"
+                      key={item.label}
+                      onClick={item.onClick}
+                    >
+                      {item.label}
+                    </MenuItem>
+                  ))}
+                </Hidden>
+              </nav>
               <Hidden mdUp>
                 {/* Hamburger menu for mobile mode */}
                 <IconButton
