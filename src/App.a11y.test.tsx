@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
-import App from './App';
+import App from './app';
 
 // Mock the Header, Footer, and PhotoGrid components
 const HeaderMock = () => <div>Header</div>;

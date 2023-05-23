@@ -1,7 +1,7 @@
 import { render, fireEvent } from '@testing-library/react';
-import darkTheme from '../themes/darkTheme';
-import lightTheme from '../themes/lightTheme';
-import Header from './Header';
+import darkTheme from '../themes/dark.theme';
+import lightTheme from '../themes/light.theme';
+import Header from './header';
 import React from 'react';
 
 describe('Header', () => {
