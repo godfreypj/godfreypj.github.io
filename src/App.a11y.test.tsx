@@ -6,15 +6,15 @@ import App from './app';
 // Mock the Header, Footer, and PhotoGrid components
 const HeaderMock = () => <div>Header</div>;
 HeaderMock.displayName = 'Header';
-jest.mock('./components/Header', () => HeaderMock);
+jest.mock('./components/header', () => HeaderMock);
 
 const FooterMock = () => <div>Footer</div>;
 FooterMock.displayName = 'Footer';
-jest.mock('./components/Footer', () => FooterMock);
+jest.mock('./components/footer', () => FooterMock);
 
 const PhotoGridMock = () => <div>PhotoGrid</div>;
 PhotoGridMock.displayName = 'PhotoGrid';
-jest.mock('./components/PhotoGrid', () => PhotoGridMock);
+jest.mock('./components/photo-grid.component', () => PhotoGridMock);
 
 expect.extend(toHaveNoViolations);
 
