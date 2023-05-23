@@ -1,12 +1,12 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import PhotoGrid from './components/PhotoGrid';
-import darkTheme from './themes/darkTheme';
-import lightTheme from './themes/lightTheme';
+import Header from './components/header';
+import Footer from './components/footer';
+import PhotoGrid from './components/photo-grid.component';
+import darkTheme from './themes/dark.theme';
+import lightTheme from './themes/light.theme';
 import { Grid, CssBaseline, Box, Paper } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
-import './App.css';
+import './app.css';
 import React from 'react';
 
 function App() {

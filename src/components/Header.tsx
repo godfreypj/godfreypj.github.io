@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-useless-undefined */
 import React from 'react';
 import {
   AppBar,
@@ -13,7 +14,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 
-interface HeaderProps {
+interface HeaderProperties {
   toggleTheme: () => void;
   customColor: string;
   lightThemeColor: string;
@@ -23,8 +24,9 @@ export default function Header({
   toggleTheme,
   customColor,
   lightThemeColor,
-}: HeaderProps) {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+}: HeaderProperties) {
+  const [anchorElement, setAnchorElement] =
+    React.useState<null | HTMLElement>();
   const menuItems = [
     { label: 'About', onClick: () => console.log('clicked about') },
     { label: 'Gallery', onClick: () => console.log('clicked gallery') },
@@ -36,11 +38,11 @@ export default function Header({
   const isLightTheme = theme.palette.mode === 'light';
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
+    setAnchorElement(event.currentTarget);
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchorElement(undefined);
   };
 
   return (
@@ -87,8 +89,8 @@ export default function Header({
                   sx={{
                     color: isLightTheme ? lightThemeColor : customColor,
                   }}
-                  anchorEl={anchorEl}
-                  open={Boolean(anchorEl)}
+                  anchorEl={anchorElement}
+                  open={Boolean(anchorElement)}
                   onClose={handleClose}
                 >
                   {menuItems.map((item) => (

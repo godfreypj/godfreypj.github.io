@@ -7,11 +7,11 @@ import '@testing-library/jest-dom';
 
 console.log('Setting up tests...');
 
-jest.mock(
-  '@mui/material/Hidden',
-  () => (props: React.PropsWithChildren<Record<string, unknown>>) =>
-    props.children
-);
+const mockHidden = (
+  properties: React.PropsWithChildren<Record<string, unknown>>
+) => properties.children;
+
+jest.mock('@mui/material/Hidden', () => mockHidden);
 
 // const dom = new JSDOM('<!doctype html><html><body></body></html>');
 // global.window = dom.window as unknown as Window & typeof globalThis;
