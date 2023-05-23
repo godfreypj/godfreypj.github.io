@@ -2,7 +2,7 @@
 id: 6ji7q1jy
 title: Add-a11y
 file_version: 1.1.2
-app_version: 1.9.7
+app_version: 1.9.8
 ---
 
 ## summary
@@ -53,20 +53,20 @@ Three tests were added:
 1      import React from 'react';
 2      import { render } from '@testing-library/react';
 3      import { axe, toHaveNoViolations } from 'jest-axe';
-4      import App from './App';
+4      import App from './app';
 5      
 6      // Mock the Header, Footer, and PhotoGrid components
 7      const HeaderMock = () => <div>Header</div>;
 8      HeaderMock.displayName = 'Header';
-9      jest.mock('./components/Header', () => HeaderMock);
+9      jest.mock('./components/header', () => HeaderMock);
 10     
 11     const FooterMock = () => <div>Footer</div>;
 12     FooterMock.displayName = 'Footer';
-13     jest.mock('./components/Footer', () => FooterMock);
+13     jest.mock('./components/footer', () => FooterMock);
 14     
 15     const PhotoGridMock = () => <div>PhotoGrid</div>;
 16     PhotoGridMock.displayName = 'PhotoGrid';
-17     jest.mock('./components/PhotoGrid', () => PhotoGridMock);
+17     jest.mock('./components/photo-grid.component', () => PhotoGridMock);
 18     
 19     expect.extend(toHaveNoViolations);
 20     
@@ -86,7 +86,7 @@ Three tests were added:
 1      import React from 'react';
 2      import { render } from '@testing-library/react';
 3      import { axe, toHaveNoViolations } from 'jest-axe';
-4      import Footer from '../components/Footer';
+4      import Footer from './footer';
 5      
 6      expect.extend(toHaveNoViolations);
 7      
@@ -106,7 +106,7 @@ Three tests were added:
 1      import React from 'react';
 2      import { render } from '@testing-library/react';
 3      import { axe, toHaveNoViolations } from 'jest-axe';
-4      import Header from '../components/Header';
+4      import Header from './header';
 5      
 6      expect.extend(toHaveNoViolations);
 7      
