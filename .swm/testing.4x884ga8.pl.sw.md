@@ -1,8 +1,8 @@
 ---
 id: 4x884ga8
 title: Testing
-file_version: 1.1.2
-app_version: 1.9.8
+file_version: 1.1.3
+app_version: 1.14.2
 ---
 
 <!-- Intro - Do not remove this comment -->
@@ -12,8 +12,7 @@ This playlist will provide an overview of the testing in the application
 
 <!-- Steps - Do not remove this comment -->
 1. [Jest](jest.dnalkmro.sw.md)
-2. [A11y](a11y.ekuhtlwm.sw.md)
-3. [Add-a11y](add-a11y.6ji7q1jy.sw.md)
+2. [A11y](a11y.6ji7q1jy.sw.md)
 
 
 <br/>
