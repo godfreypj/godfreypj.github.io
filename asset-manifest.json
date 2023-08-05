@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd61b305.css",
-    "main.js": "/static/js/main.127588e7.js",
-    "static/js/787.ff52282a.chunk.js": "/static/js/787.ff52282a.chunk.js",
-    "index.html": "/index.html",
-    "main.fd61b305.css.map": "/static/css/main.fd61b305.css.map",
-    "main.127588e7.js.map": "/static/js/main.127588e7.js.map",
-    "787.ff52282a.chunk.js.map": "/static/js/787.ff52282a.chunk.js.map"
+    "main.css": "/godfreypj.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/godfreypj.github.io/static/js/main.a02554be.js",
+    "static/js/787.ff52282a.chunk.js": "/godfreypj.github.io/static/js/787.ff52282a.chunk.js",
+    "static/media/logo.svg": "/godfreypj.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/godfreypj.github.io/index.html",
+    "main.073c9b0a.css.map": "/godfreypj.github.io/static/css/main.073c9b0a.css.map",
+    "main.a02554be.js.map": "/godfreypj.github.io/static/js/main.a02554be.js.map",
+    "787.ff52282a.chunk.js.map": "/godfreypj.github.io/static/js/787.ff52282a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd61b305.css",
-    "static/js/main.127588e7.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a02554be.js"
   ]
 }
