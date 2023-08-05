@@ -4,7 +4,7 @@ module.exports = {
     configure: {
       roots: ['<rootDir>/src'],
       testEnvironment: 'jsdom',
-      testMatch: ['**/?(*.)+(a11y|test).{js,jsx,ts,tsx}'],
+      testMatch: ['**/?(*.)+(test).{js,jsx,ts,tsx}'],
       collectCoverage: true,
       coverageReporters: ['html', 'lcov', 'text'],
       coverageThreshold: {
