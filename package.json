@@ -1,21 +1,13 @@
 {
-  "name": "godfreypj-app",
-  "version": "0.1.0",
-  "private": true,
   "homepage": "https://godfreypj.github.io/",
+  "name": "godfreypj.github.io",
+  "version": "0.1.0",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "craco start",
-    "predeploy": "craco build",
-    "deploy": "gh-pages -d build",
-    "test": "craco test --watchAll",
-    "clean": "rm -rf ./coverage"
   },
   "browserslist": {
     "production": [
@@ -28,6 +20,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "scripts": {
+    "start": "craco start",
+    "predeploy": "craco build",
+    "deploy": "gh-pages -d build",
+    "test": "craco test --watchAll",
+    "clean": "rm -rf ./coverage"
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
