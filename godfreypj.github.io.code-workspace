@@ -3,5 +3,14 @@
     {
       "path": "."
     }
-  ]
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "prettier.configPath": "/Users/philipgodfrey/dev/godfreypj.github.io/prettierrc.js",
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 99,
+    "prettier.singleAttributePerLine": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay"
+  }
 }
