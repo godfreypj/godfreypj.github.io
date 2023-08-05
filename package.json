@@ -25,7 +25,7 @@
     "start": "craco start",
     "predeploy": "craco build",
     "deploy": "gh-pages -d build",
-    "test": "craco test --watchAll",
+    "test": "craco test --watchAll --forceExit",
     "clean": "rm -rf ./coverage"
   },
   "devDependencies": {
