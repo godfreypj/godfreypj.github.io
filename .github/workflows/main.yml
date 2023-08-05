@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run Tests
-        run: npm test -- --forceExit
+        run: npm test
       - name: Build app
         run: npm run predeploy
       - name: Deploy to gh-pages
