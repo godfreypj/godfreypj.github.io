@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { renderWithAccessibility } from './a11yTestHelper';
+import renderWithAccessibility from './a11yTestHelper';
 import App from './App';
 
 // Components
