@@ -15,14 +15,6 @@ module.exports = {
       },
     },
   ],
-  style: {
-    postcss: {
-      plugins: [
-        'tailwindcss', // Add Tailwind CSS
-        'autoprefixer', // Add autoprefixer
-      ],
-    },
-  },
   jest: {
     configure: {
       roots: ['<rootDir>/src'],
