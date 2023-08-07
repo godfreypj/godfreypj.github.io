@@ -1,142 +1,135 @@
-import React from 'react';
-import {
-  Navbar, Collapse, Typography, Button, IconButton,
-} from '@material-tailwind/react';
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import './Header.css';
 
-export default function NavbarDefault() {
-  const [openNav, setOpenNav] = React.useState(false);
-
-  React.useEffect(() => {
-    window.addEventListener('resize', () => window.innerWidth >= 960 && setOpenNav(false));
-  }, []);
-
-  const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a
-          href="#"
-          className="flex items-center"
-        >
-          Pages
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a
-          href="#"
-          className="flex items-center"
-        >
-          Account
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a
-          href="#"
-          className="flex items-center"
-        >
-          Blocks
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a
-          href="#"
-          className="flex items-center"
-        >
-          Docs
-        </a>
-      </Typography>
-    </ul>
-  );
-
+export default function Header() {
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium"
+    <div className="navbar bg-base-100">
+      <div
+        className="navbar-start"
+        role="navigation"
+      >
+        {/* Hamburger menu */}
+        <div
+          className="dropdown"
+          data-testid="hamburger-menu"
         >
-          Material Tailwind
-        </Typography>
-        <div className="hidden lg:block">{navList}</div>
-        <Button
-          variant="gradient"
-          size="sm"
-          className="hidden lg:inline-block"
-        >
-          <span>Buy Now</span>
-        </Button>
-        <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
+          <button
+            aria-label="logo button"
+            type="button"
+            tabIndex={0}
+            className="btn btn-ghost lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
               fill="none"
-              className="h-6 w-6"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={2}
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={openNav}>
-        <div className="container mx-auto">
-          {navList}
-          <Button
-            variant="gradient"
-            size="sm"
-            fullWidth
-            className="mb-2"
+          </button>
+          <ul
+            role="menu"
+            className="menu menu-sm dropdown-content
+           mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <span>Buy Now</span>
-          </Button>
+            <li role="menuitem">
+              <a tabIndex={0}>Home</a>
+            </li>
+            <li role="menuitem">
+              <a tabIndex={0}>Projects</a>
+              <ul
+                className="p-2"
+                role="menu"
+              >
+                <li role="menuitem">
+                  <a tabIndex={0}>Sudoku Solver</a>
+                </li>
+                <li role="menuitem">
+                  <a tabIndex={0}>The Right Move</a>
+                </li>
+              </ul>
+            </li>
+            <li role="menuitem">
+              <a tabIndex={0}>About</a>
+            </li>
+          </ul>
         </div>
-      </Collapse>
-    </Navbar>
+        <div role="menu">
+          <a
+            role="menuitem"
+            className="btn btn-ghost normal-case text-xl"
+            tabIndex={0}
+          >
+            godfreypj
+          </a>
+        </div>
+      </div>
+      {/* Main horizontal menu */}
+      <div
+        data-testid="horizontal-menu"
+        className="navbar-center hidden lg:flex"
+        role="navigation"
+        aria-label="horizontal menu"
+      >
+        <ul
+          className="menu menu-horizontal px-1"
+          role="menu"
+        >
+          <li role="menuitem">
+            <a tabIndex={0}>Home</a>
+          </li>
+          <li role="menuitem">
+            <details tabIndex={0}>
+              <summary>Projects</summary>
+              <ul className="p-2">
+                <li>
+                  <a tabIndex={0}>Sudoku Solver</a>
+                </li>
+                <li>
+                  <a tabIndex={0}>The Right Move</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li role="menuitem">
+            <a tabIndex={0}>About</a>
+          </li>
+          <li role="menuitem">
+            <a tabIndex={0}>Blog</a>
+          </li>
+        </ul>
+      </div>
+      {/* Search Bar */}
+      <div className="navbar-end" data-testid="search-bar">
+        <button
+          tabIndex={0}
+          type="button"
+          className="btn btn-ghost btn-circle"
+          aria-label="search button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
   );
 }

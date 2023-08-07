@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom/extend-expect';
+import { act } from '@testing-library/react';
 import { ReactElement, JSXElementConstructor } from 'react';
 import { createRoot } from 'react-dom/client';
 
@@ -11,7 +12,9 @@ export default async function renderWithAccessibility(
   component: ReactElement<unknown, string | JSXElementConstructor<unknown>>,
 ) {
   const container = document.createElement('div');
-  createRoot(container).render(component);
+  act(() => {
+    createRoot(container).render(component);
+  });
   const results = await axe(container);
   expect(results).toHaveNoViolations();
   return container;
