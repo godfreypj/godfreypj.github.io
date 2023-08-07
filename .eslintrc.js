@@ -40,6 +40,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'jsx-a11y/no-redundant-roles': 0,
   },
   settings: {
     'import/resolver': {
