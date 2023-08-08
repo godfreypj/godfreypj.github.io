@@ -24,7 +24,7 @@
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "test-local": "react-scripts test --watchAll",
+    "test-local": "jest --watchAll --config ./jest.config.js",
     "clean": "rm -rf ./coverage",
     "lint": "eslint ."
   },
