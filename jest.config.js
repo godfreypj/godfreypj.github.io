@@ -15,5 +15,5 @@ module.exports = {
       lines: 80,
     },
   },
-  coveragePathIgnorePatterns: ['/node_modules/', 'index.tsx', 'reportWebVitals.ts', 'setupTests.ts'],
+  coveragePathIgnorePatterns: ['/node_modules/', 'index.tsx', 'reportWebVitals.ts', 'setupTests.ts', 'a11yTestHelper.ts'],
 };
