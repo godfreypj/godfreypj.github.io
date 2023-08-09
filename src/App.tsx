@@ -1,12 +1,16 @@
-import './App.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>My app</p>
-      </header>
-    </div>
+    <>
+      <div role="navigation" aria-label="main nav">
+        <Header />
+      </div>
+      <div role="main">
+        <br />
+        <h1 className="text-2xl font-bold underline" role="heading">My App</h1>
+      </div>
+    </>
   );
 }
 
