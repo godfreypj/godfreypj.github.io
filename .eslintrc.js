@@ -7,6 +7,7 @@ module.exports = {
     'airbnb',
   ],
   rules: {
+    'jsx-a11y/no-noninteractive-tabindex': 0,
     '@typescript-eslint/no-var-requires': 0,
     'comma-style': ['error', 'last'],
     'react/prop-types': 0,

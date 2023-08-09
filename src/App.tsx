@@ -1,4 +1,5 @@
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <br />
         <h1 className="text-2xl font-bold underline" role="heading">My App</h1>
       </div>
+      <Footer />
     </>
   );
 }
