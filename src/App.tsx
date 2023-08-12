@@ -1,8 +1,8 @@
-import Home from 'pages/Home';
+import Home from './pages/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-function App() {
+export default function App() {
   return (
     <>
       <div role="navigation" aria-label="main nav">
@@ -13,5 +13,3 @@ function App() {
     </>
   );
 }
-
-export default App;
