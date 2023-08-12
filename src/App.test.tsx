@@ -1,15 +1,17 @@
-import { render, screen } from '@testing-library/react';
-import renderWithAccessibility from './a11yTestHelper';
+import { render } from '@testing-library/react';
 import App from './App';
+import renderWithAccessibility from './a11yTestHelper';
 
 // Components
-test('renders learn react link', () => {
-  render(<App />);
-  const myElement = screen.getByText(/My App/i);
-  expect(myElement).toBeInTheDocument();
+describe('App Renders', () => {
+  test('App renders', () => {
+    const { getAllByTestId } = render(<App />);
+    const appComp = getAllByTestId(/horizontal-menu/i);
+    expect(appComp[0]).toBeInTheDocument();
+  });
 });
 
 // Accessibility
-test('my app renders without violations', async () => {
+test('App renders without violations', async () => {
   await renderWithAccessibility(<App />);
 });

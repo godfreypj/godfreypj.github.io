@@ -2,10 +2,16 @@ import './Home.css';
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full home-container">
+    <div
+      className="flex flex-col w-full home-container"
+      role="main"
+    >
       <div className="grid h-40 card bg-base-300 rounded-box place-items-center">
         <div className="collapse bg-base-200">
-          <input type="checkbox" />
+          <input
+            aria-label="collapse bar"
+            type="checkbox"
+          />
           <div className="collapse-title text-xl font-medium">Click me to show/hide content</div>
           <div className="collapse-content">
             <p>hello</p>
@@ -19,10 +25,16 @@ export default function Home() {
         </div>
       </div>
       <div className="divider" />
-      <div className="grid h-30 card bg-base-300 rounded-box place-items-center featured-content">
+      <div
+        className="grid h-30 card bg-base-300 rounded-box place-items-center featured-content"
+        role="article"
+      >
         <div className="flex flex-col w-full lg:flex-row">
           <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">
-            <div className="alert">
+            <div
+              className="alert"
+              role="alert"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -36,11 +48,14 @@ export default function Home() {
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span>New software update available.</span>
+              <span role="note">New software update available.</span>
             </div>
           </div>
           <div className="divider lg:divider-horizontal" />
-          <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">
+          <div
+            className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center"
+            role="article"
+          >
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </div>
