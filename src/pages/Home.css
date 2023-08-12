@@ -6,12 +6,38 @@
 .home-container {
   padding: 1rem;
   margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin: auto;
+  width: 90%;
 }
 
 .featured-content {
-  padding: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
 }
 
 .stroke-current {
   color: #92D761;
+}
+
+.hero-class {
+  min-height: 40vh;
+}
+
+.text-accent-focus.projects-row {
+  font-weight: 800;
+  color: #72ab49;
+}
+
+.projects-title {
+  font-weight: 700;
+  color: #772603;
+}
+
+.social-title {
+  font-weight: 700;
+  color: #772603;
 }

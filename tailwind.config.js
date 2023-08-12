@@ -12,14 +12,14 @@ module.exports = {
         greenYellow: {
           primary: '#E76B47',
           secondary: '#40A078',
-          accent: '#92D761',
+          accent: '#72ab49',
           neutral: '#F2DD6A',
           'base-100': '#2E3E3C',
         },
         grey: {
           primary: '#222831',
           secondary: '#B55400',
-          accent: '#92D761',
+          accent: '#72ab49',
           neutral: '#DDDDDD',
           'base-100': '#222831',
         },
