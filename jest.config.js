@@ -6,9 +6,17 @@ module.exports = {
   testMatch: ['**/?(*.)+(test).{js,jsx,ts,tsx}'],
   collectCoverage: true,
   coverageReporters: ['html', 'lcov', 'text'],
-  collectCoverageFrom: ['<rootDir>/src/*'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.svg$': '<rootDir>/imageTransform.js',
+    '^.+\\.jpg$': '<rootDir>/imageTransform.js',
+    '^.+\\.png$': '<rootDir>/imageTransform.js',
+  },
   moduleNameMapper: {
     '\\.(css)$': '<rootDir>/__mocks__/styleMock.js',
+    '^components/(.*)': '<rootDir>/src/components/$1',
+    '^assets/(.*)': '<rootDir>/src/assets/$1',
   },
   coverageThreshold: {
     global: {
