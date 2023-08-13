@@ -1,5 +1,9 @@
-svg {
-  height: 100px;
-  width: 50px;
-  color: #92D761;
+.main-logo {
+  height: 10rem;
+  width: 10rem;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
 }
