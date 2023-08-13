@@ -18,36 +18,43 @@ export default function Footer() {
           alt="main gpj logo"
           className="main-logo"
         />
-        <p>godfreypj - ruining the internet since 1989</p>
+        <p>godfreypj - est 1989</p>
       </div>
-      <div
-        className="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
-        data-testid="right-footer-items"
-      >
-        <a
-          href="https://www.threads.net/@phil.captures"
-          target="_blank"
-          rel="noreferrer"
+      <div className="footer grid-flow-col justify-end">
+        <div
+          className="grid-flow-col"
+          data-testid="threads-logo"
         >
-          <img
-            src={threadsLogo}
-            alt="threads logo"
-            className="logo"
-          />
-          Threads
-        </a>
-        <a
-          href="https://www.instagram.com/phil.captures"
-          target="_blank"
-          rel="noreferrer"
+          <a
+            href="https://www.threads.net/@phil.captures"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={threadsLogo}
+              alt="threads logo"
+              className="logo"
+            />
+            <p className="text-center">Threads</p>
+          </a>
+        </div>
+        <div
+          className="grid-flow-col"
+          data-testid="insta-logo"
         >
-          <img
-            src={instaLogo}
-            alt="instagram logo"
-            className="logo"
-          />
-          Instagram
-        </a>
+          <a
+            href="https://www.instagram.com/phil.captures"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={instaLogo}
+              alt="instagram logo"
+              className="logo"
+            />
+            <p className="text-center">Instagram</p>
+          </a>
+        </div>
       </div>
     </footer>
   );

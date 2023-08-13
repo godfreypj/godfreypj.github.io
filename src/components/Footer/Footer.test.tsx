@@ -3,23 +3,25 @@ import renderWithAccessibility from '../../a11yTestHelper';
 import Footer from './Footer';
 
 // Components
-describe('The footer renders and functions correctly', () => {
+describe('The footer renders properly', () => {
   test('Horizontal menu renders', () => {
     const { getAllByTestId } = render(<Footer />);
     const footer = getAllByTestId(/footer/i);
     expect(footer[0]).toBeInTheDocument();
   });
 
-  test('Search bar renders', () => {
+  test('Left items render', () => {
     const { getAllByTestId } = render(<Footer />);
     const centerItems = getAllByTestId(/center-footer-items/i);
     expect(centerItems[0]).toBeInTheDocument();
   });
 
-  test('Hamburger menu renders hidden when screen is full size', () => {
+  test('Social logos render', () => {
     const { getAllByTestId } = render(<Footer />);
-    const rightItems = getAllByTestId(/right-footer-items/i);
-    expect(rightItems[0]).toBeInTheDocument();
+    const instaLogo = getAllByTestId(/insta-logo/i);
+    expect(instaLogo[0]).toBeInTheDocument();
+    const threadsLogo = getAllByTestId(/threads-logo/i);
+    expect(threadsLogo[0]).toBeInTheDocument();
   });
 });
 

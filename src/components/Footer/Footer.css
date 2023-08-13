@@ -1,9 +1,23 @@
+/* GPJ logo */
 .main-logo {
   height: 10rem;
   width: 10rem;
 }
 
+/* Other logos */
 .logo {
   height: 5rem;
   width: 5rem;
+}
+
+/* Centered in mobile */
+@media (max-width: 48rem) {
+  .footer {
+    place-items: center;
+  }
+}
+@media (max-width: 48rem) {
+  .footer.grid-flow-col {
+    justify-content: center;
+  }
 }
