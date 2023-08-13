@@ -7,7 +7,7 @@ export default function ThreadsCard({ url }: { url: string }) {
       <iframe
         title="threads frame"
         src={embedUrl}
-        className="w-full h-full"
+        className="w-full threads-frame"
       />
     </div>
   );

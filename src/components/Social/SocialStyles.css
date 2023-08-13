@@ -6,6 +6,14 @@
   height: 32rem;
 }
 
-.threads-frame {
-  height: 34rem;
+@media (min-width: 769px) {
+  .threads-frame {
+    height: 34rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .threads-frame iframe {
+    height: auto;
+  }
 }

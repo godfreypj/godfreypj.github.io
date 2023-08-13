@@ -35,7 +35,7 @@ export default function Home() {
           />
           <div className="collapse-title text-xl text-neutral-focus">Featured Projects</div>
           <div className="collapse-content">
-            <span className="text-accent-focus">
+            <span className="text-neutral-900">
               <p>Sudoku | Pages | Scrabble | Cylcones</p>
             </span>
           </div>
@@ -59,7 +59,7 @@ export default function Home() {
           </p>
           <h2 className="card-title text-neutral-focus pt-0 mt-0">Threads</h2>
           <p>I am always saying something on here...</p>
-          <div className="w-full indicator flex items-center justify-center h-full">
+          <div className="w-full indicator justify-center">
             <span className="indicator-item badge badge-secondary">typing…</span>
             <ThreadsCard url="https://www.threads.net/@phil.captures/post/Cv3fgMoMmwi/" />
           </div>
