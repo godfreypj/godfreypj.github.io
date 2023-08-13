@@ -1,13 +1,13 @@
-import './InstaCard.css';
+import './SocialStyles.css';
 
 export default function InstaCard({ url }: { url: string }) {
   const embedUrl = `${url}embed`;
   return (
-    <div className="bg-base-100 shadow-xl w-max m-7 p-6">
+    <div className="bg-base-100 shadow-xl w-full insta-frame">
       <iframe
         title="instagram frame"
         src={embedUrl}
-        height="460"
+        className="h-full w-full"
       />
     </div>
   );

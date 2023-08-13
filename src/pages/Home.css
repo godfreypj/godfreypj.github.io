@@ -1,8 +1,4 @@
-.main-text-content {
-  padding: 2rem;
-  padding-bottom: 1rem;
-}
-
+/* Master container for the home page */
 .home-container {
   padding: 1rem;
   margin-top: 1rem;
@@ -12,32 +8,24 @@
   width: 90%;
 }
 
-.featured-content {
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
-  padding-top: 1rem;
-}
-
-.stroke-current {
-  color: #92D761;
-}
-
-.hero-class {
+/* Hero Banner */
+.hero-height {
   min-height: 40vh;
 }
 
-.text-accent-focus.projects-row {
-  font-weight: 800;
-  color: #72ab49;
-}
-
+/* Projects component */
 .projects-title {
   font-weight: 700;
   color: #772603;
 }
 
-.social-title {
-  font-weight: 700;
-  color: #772603;
+/* Main content */
+.main-text-content {
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .lg\:card-side {
+    height: 50rem;
+  }
 }

@@ -1,0 +1,11 @@
+.iframe {
+  flex-direction: column;
+}
+
+.insta-frame {
+  height: 32rem;
+}
+
+.threads-frame {
+  height: 34rem;
+}
