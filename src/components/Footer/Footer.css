@@ -1,5 +1,23 @@
-svg {
-  height: 100px;
-  width: 50px;
-  color: #92D761;
+/* GPJ logo */
+.main-logo {
+  height: 10rem;
+  width: 10rem;
+}
+
+/* Other logos */
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+/* Centered in mobile */
+@media (max-width: 48rem) {
+  .footer {
+    place-items: center;
+  }
+}
+@media (max-width: 48rem) {
+  .footer.grid-flow-col {
+    justify-content: center;
+  }
 }

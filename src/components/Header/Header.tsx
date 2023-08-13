@@ -36,27 +36,16 @@ export default function Header() {
           <ul
             role="menu"
             className="menu menu-sm dropdown-content
-           mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+           mt-3 z-[1] p-2 shadow rounded-box w-52"
           >
             <li role="menuitem">
               <a tabIndex={0}>Home</a>
             </li>
             <li role="menuitem">
-              <a tabIndex={0}>Projects</a>
-              <ul
-                className="p-2"
-                role="menu"
-              >
-                <li role="menuitem">
-                  <a tabIndex={0}>Sudoku Solver</a>
-                </li>
-                <li role="menuitem">
-                  <a tabIndex={0}>The Right Move</a>
-                </li>
-              </ul>
+              <a tabIndex={0}>About</a>
             </li>
             <li role="menuitem">
-              <a tabIndex={0}>About</a>
+              <a tabIndex={0}>Blog</a>
             </li>
           </ul>
         </div>
@@ -81,32 +70,31 @@ export default function Header() {
           className="menu menu-horizontal px-1"
           role="menu"
         >
-          <li role="menuitem">
+          <li
+            role="menuitem"
+            className="px-4"
+          >
             <a tabIndex={0}>Home</a>
           </li>
-          <li role="menuitem">
-            <details tabIndex={0}>
-              <summary>Projects</summary>
-              <ul className="p-2">
-                <li>
-                  <a tabIndex={0}>Sudoku Solver</a>
-                </li>
-                <li>
-                  <a tabIndex={0}>The Right Move</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li role="menuitem">
+          <li
+            role="menuitem"
+            className="px-4"
+          >
             <a tabIndex={0}>About</a>
           </li>
-          <li role="menuitem">
+          <li
+            role="menuitem"
+            className="px-4"
+          >
             <a tabIndex={0}>Blog</a>
           </li>
         </ul>
       </div>
       {/* Search Bar */}
-      <div className="navbar-end" data-testid="search-bar">
+      <div
+        className="navbar-end"
+        data-testid="search-bar"
+      >
         <button
           tabIndex={0}
           type="button"

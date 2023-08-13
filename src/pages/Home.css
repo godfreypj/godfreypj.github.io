@@ -1,17 +1,33 @@
+/* Master container for the home page */
+.home-container {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin: auto;
+  width: 90%;
+}
+
+/* Hero Banner */
+.hero-height {
+  min-height: 40vh;
+}
+
+/* Projects component */
+.projects-title {
+  font-weight: 700;
+  color: #772603;
+}
+
+/* Main content */
 .main-text-content {
   padding: 2rem;
   padding-bottom: 1rem;
 }
 
-.home-container {
-  padding: 1rem;
-  margin-top: 1rem;
-}
-
-.featured-content {
-  padding: 5rem;
-}
-
-.stroke-current {
-  color: #92D761;
+/* Make sure Social card is big enough */
+@media (min-width: 1024px) {
+  .lg\:card-side {
+    height: 50rem;
+  }
 }
