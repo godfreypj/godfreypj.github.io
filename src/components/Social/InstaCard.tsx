@@ -7,7 +7,8 @@ export default function InstaCard({ url }: { url: string }) {
       <iframe
         title="instagram frame"
         src={embedUrl}
-        className="h-full w-full"
+        className="w-full insta-frame"
+        data-testid="insta-frame"
       />
     </div>
   );
