@@ -35,9 +35,26 @@ export default function Home() {
           />
           <div className="collapse-title text-xl text-neutral-focus">Featured Projects</div>
           <div className="collapse-content">
-            <span className="text-neutral-900">
-              <p>Sudoku | Pages | Scrabble | Cylcones</p>
-            </span>
+            <div className="join join-vertical lg:join-horizontal">
+              <button
+                className="btn btn-accent join-item"
+                type="button"
+              >
+                Sudoku
+              </button>
+              <button
+                className="btn btn-accent join-item"
+                type="button"
+              >
+                Scrabble
+              </button>
+              <button
+                className="btn btn-accent join-item"
+                type="button"
+              >
+                Pages
+              </button>
+            </div>
           </div>
         </div>
         <div className="main-text-content">
