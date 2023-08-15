@@ -23,8 +23,8 @@
     "start": "react-scripts start",
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
-    "test-local": "jest --watchAll --config ./jest.config.js",
+    "test": "react-scripts test --coverage --collectCoverageFrom='./src/**'",
+    "test-local": "jest --watchAll --verbose --config ./jest.config.js",
     "clean": "rm -rf ./coverage",
     "lint": "eslint ."
   },
