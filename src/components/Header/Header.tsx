@@ -35,8 +35,8 @@ export default function Header() {
           </button>
           <ul
             role="menu"
-            className="menu menu-sm dropdown-content
-           mt-3 z-[1] p-2 shadow rounded-box w-52"
+            className="menu menu-sm dropdown-content bg-accent
+           mt-3 z-[1] p-2 shadow rounded-box w-32"
           >
             <li role="menuitem">
               <a tabIndex={0}>Home</a>
