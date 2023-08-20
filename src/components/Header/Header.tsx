@@ -39,10 +39,20 @@ export default function Header() {
            mt-3 z-[1] p-2 shadow rounded-box w-32"
           >
             <li role="menuitem">
-              <a tabIndex={0}>Home</a>
+              <a
+                tabIndex={0}
+                href="/"
+              >
+                Home
+              </a>
             </li>
             <li role="menuitem">
-              <a tabIndex={0}>About</a>
+              <a
+                tabIndex={0}
+                href="/about"
+              >
+                About
+              </a>
             </li>
             <li role="menuitem">
               <a tabIndex={0}>Blog</a>
@@ -62,7 +72,7 @@ export default function Header() {
       {/* Main horizontal menu */}
       <div
         data-testid="horizontal-menu"
-        className="navbar-center hidden lg:flex"
+        className="navbar-center hidden lg:flex prose"
         role="navigation"
         aria-label="horizontal menu"
       >
@@ -72,19 +82,29 @@ export default function Header() {
         >
           <li
             role="menuitem"
-            className="px-4"
+            className="px-4 prose-a:hover:font-bold"
           >
-            <a tabIndex={0}>Home</a>
+            <a
+              tabIndex={0}
+              href="/"
+            >
+              Home
+            </a>
           </li>
           <li
             role="menuitem"
-            className="px-4"
+            className="px-4 prose-a:hover:font-bold"
           >
-            <a tabIndex={0}>About</a>
+            <a
+              tabIndex={0}
+              href="/about"
+            >
+              About
+            </a>
           </li>
           <li
             role="menuitem"
-            className="px-4"
+            className="px-4 prose-a:hover:font-bold"
           >
             <a tabIndex={0}>Blog</a>
           </li>

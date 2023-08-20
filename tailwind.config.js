@@ -1,4 +1,5 @@
 const daisyui = require('daisyui');
+const tailwindcssType = require('@tailwindcss/typography');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,12 +8,7 @@ module.exports = {
     extend: {},
   },
   daisyui: {
-    themes: [
-      'light',
-      'dark',
-      'pastel',
-      'dracula',
-    ],
+    themes: ['light', 'dark', 'pastel', 'dracula'],
   },
-  plugins: [daisyui],
+  plugins: [tailwindcssType, daisyui],
 };
