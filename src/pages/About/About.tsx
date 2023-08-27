@@ -14,7 +14,7 @@ export default function About() {
         data-testid="about-title-bar"
       >
         <article
-          className="prose flex-grow font-bold lg:text-base lg:pt-4 lg:pl-20 p-0 m-0 text-xs"
+          className="prose flex-grow font-bold lg:text-base pl-1 pt-4 lg:pl-20 p-0 m-0 text-xs"
           data-testid="about-quote"
         >
           Software Engineer, New England native & Navy veteran.
@@ -34,74 +34,72 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex p-10 m-10 bg-gradient-to-r from-secondary to-secondary-focus rounded-3xl">
+      <div className="flex lg:p-10 m-10 justify-center bg-gradient-to-r from-secondary to-secondary-focus rounded-3xl">
         <ul className="steps">
-          <li className="step w-60 step-neutral prose prose-lg">College</li>
-          <li className="step w-60 step-neutral prose prose-lg">U.S. Navy</li>
-          <li className="step w-60 step-neutral prose prose-lg">Guam</li>
-          <li className="step w-60 step-neutral prose prose-lg">Boston</li>
+          <li className="step lg:w-60 step-neutral prose lg:prose-lg">College</li>
+          <li className="step lg:w-60 step-neutral prose lg:prose-lg">U.S. Navy</li>
+          <li className="step lg:w-60 step-neutral prose lg:prose-lg">Guam</li>
+          <li className="step lg:w-60 step-neutral prose lg:prose-lg">Boston</li>
         </ul>
       </div>
       <div
         data-testid="about-skills"
-        className="flex mt-10"
+        className="flex justify-center mt-10"
       >
-        <div className="card w-96 bg-primary text-primary-content m-8">
+        <div className="card lg:w-96 lg:h-full sm:w-20 bg-primary text-primary-content lg:m-8 m-2 h-20 w-20 items-center">
           <div className="card-body p-6">
-            <h2 className="card-title prose prose-xl">Web Dev</h2>
-            <p className="flex items-center prose prose-md">
+            <h2 className="card-title prose lg:prose-xl sm:block hidden">Web Dev</h2>
+            <p className="lg:flex items-center prose sm:block hidden">
               React applications & java/spring back-ends.
             </p>
-            <div className="card-actions justify-end ml-auto w-20">
+            <div className="card-actions lg:justify-end justify-center pb-6 ml-auto w-20">
               <img
                 src={html5}
                 alt="html5 icon"
-                className="w-14"
+                className="lg:w-14 w-10"
               />
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-primary text-primary-content m-8">
+        <div className="card lg:w-96 lg:h-full sm:w-20 bg-primary text-primary-content lg:m-8 m-2 h-20 w-20 items-center">
           <div className="card-body p-6">
-            <h2 className="card-title prose prose-xl">Java/Spring</h2>
-            <p className="flex items-center prose prose-md">
-              WebApps and back-end SOAP and REST APIs.
+            <h2 className="card-title prose lg:prose-xl sm:block hidden">Java/Spring</h2>
+            <p className="lg:flex items-center prose sm:block hidden">
+              WebApps & SOAP and REST APIs.
             </p>
-            <div className="card-actions justify-end ml-auto w-20">
+            <div className="card-actions lg:justify-end justify-center pb-6 ml-auto w-20">
               <img
                 src={java}
                 alt="java icon"
-                className="w-14"
+                className="lg:w-14 w-10"
               />
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-primary text-primary-content m-8">
+        <div className="card lg:w-96 lg:h-full sm:w-20 bg-primary text-primary-content lg:m-8 m-2 h-20 w-20 items-center">
           <div className="card-body p-6">
-            <h2 className="card-title prose prose-xl">Python</h2>
-            <p className="flex items-center prose prose-md">
+            <h2 className="card-title prose lg:prose-xl sm:block hidden">Python</h2>
+            <p className="lg:flex items-center prose sm:block hidden">
               Back-end Flask apps; MFE architecture.
             </p>
-            <div className="card-actions justify-end ml-auto w-20">
+            <div className="card-actions lg:justify-end justify-center pb-6 ml-auto w-20">
               <img
                 src={python}
                 alt="python icon"
-                className="w-14"
+                className="lg:w-14 w-10"
               />
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-primary text-primary-content m-8">
+        <div className="card lg:w-96 lg:h-full sm:w-20 bg-primary text-primary-content lg:m-8 m-2 h-20 w-20 items-center">
           <div className="card-body p-6">
-            <h2 className="card-title prose prose-xl">C++</h2>
-            <p className="flex items-center prose prose-md">
-              Developed and implemented C++ for embedded systems.
-            </p>
-            <div className="card-actions justify-end ml-auto w-20">
+            <h2 className="card-title prose lg:prose-xl sm:block hidden">C++</h2>
+            <p className="lg:flex items-center prose sm:block hidden">C++ for embedded systems.</p>
+            <div className="card-actions lg:justify-end justify-center pb-6 ml-auto w-20">
               <img
                 src={cpp}
                 alt="c plus plus icon"
-                className="w-14"
+                className="lg:w-14 w-10"
               />
             </div>
           </div>
