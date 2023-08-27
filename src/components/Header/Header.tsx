@@ -1,4 +1,19 @@
+import React, { useState } from 'react';
+
 export default function Header() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+
+    // If the dropdown was open and the button is clicked again, blur the button
+    if (isDropdownOpen) {
+      const activeElement = document.activeElement as HTMLElement;
+      if (activeElement?.blur) {
+        activeElement.blur();
+      }
+    }
+  };
   return (
     <div className="navbar bg-base-100">
       <div
@@ -15,6 +30,7 @@ export default function Header() {
             type="button"
             tabIndex={0}
             className="btn btn-ghost lg:hidden"
+            onClick={toggleDropdown}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
