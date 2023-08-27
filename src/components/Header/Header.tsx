@@ -1,5 +1,3 @@
-import './Header.css';
-
 export default function Header() {
   return (
     <div className="navbar bg-base-100">
@@ -35,7 +33,7 @@ export default function Header() {
           </button>
           <ul
             role="menu"
-            className="menu menu-sm dropdown-content bg-accent
+            className="menu menu-sm dropdown-content bg-neutral
            mt-3 z-[1] p-2 shadow rounded-box w-32"
           >
             <li role="menuitem">
