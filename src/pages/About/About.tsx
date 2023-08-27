@@ -1,4 +1,8 @@
 import selfie from '../../assets/selfie.jpg';
+import python from '../../assets/python.png';
+import html5 from '../../assets/html5.png';
+import java from '../../assets/java.png';
+import cpp from '../../assets/cpp.png';
 import './About.css';
 
 export default function About() {
@@ -34,73 +38,63 @@ export default function About() {
         data-testid="about-skills"
         className="flex mt-10"
       >
-        <div className="card w-96 bg-primary text-primary-content">
-          <div className="card-body">
-            <h2 className="card-title">Language 1</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button
-                className="btn"
-                type="button"
-              >
-                Buy Now
-              </button>
+        <div className="card w-96 bg-primary text-primary-content m-8">
+          <div className="card-body p-6">
+            <h2 className="card-title prose prose-xl">Python</h2>
+            <p className="flex items-center prose prose-md">
+              Back-end Flask apps; MFE architecture.
+            </p>
+            <div className="card-actions justify-end ml-auto w-20">
+              <img
+                src={python}
+                alt="python icon"
+                className="w-14"
+              />
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-primary text-primary-content">
-          <div className="card-body">
-            <h2 className="card-title">Language 2</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button
-                className="btn"
-                type="button"
-              >
-                Buy Now
-              </button>
+        <div className="card w-96 bg-primary text-primary-content m-8">
+          <div className="card-body p-6">
+            <h2 className="card-title prose prose-xl">Web Dev</h2>
+            <p className="flex items-center prose prose-md">
+              React applications & java/spring back-ends.
+            </p>
+            <div className="card-actions justify-end ml-auto w-20">
+              <img
+                src={html5}
+                alt="html5 icon"
+                className="w-14"
+              />
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-primary text-primary-content">
-          <div className="card-body">
-            <h2 className="card-title">Language 3</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button
-                className="btn"
-                type="button"
-              >
-                Buy Now
-              </button>
+        <div className="card w-96 bg-primary text-primary-content m-8">
+          <div className="card-body p-6">
+            <h2 className="card-title prose prose-xl">Java/Spring</h2>
+            <p className="flex items-center prose prose-md">
+              WebApps and back-end SOAP and REST APIs.
+            </p>
+            <div className="card-actions justify-end ml-auto w-20">
+              <img
+                src={java}
+                alt="java icon"
+                className="w-14"
+              />
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-primary text-primary-content">
-          <div className="card-body">
-            <h2 className="card-title">Language 4</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button
-                className="btn"
-                type="button"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="card w-96 bg-primary text-primary-content">
-          <div className="card-body">
-            <h2 className="card-title">Language 5</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button
-                className="btn"
-                type="button"
-              >
-                Buy Now
-              </button>
+        <div className="card w-96 bg-primary text-primary-content m-8">
+          <div className="card-body p-6">
+            <h2 className="card-title prose prose-xl">C++</h2>
+            <p className="flex items-center prose prose-md">
+              Developed and implemented C++ for embedded systems.
+            </p>
+            <div className="card-actions justify-end ml-auto w-20">
+              <img
+                src={cpp}
+                alt="c plus plus icon"
+                className="w-14"
+              />
             </div>
           </div>
         </div>

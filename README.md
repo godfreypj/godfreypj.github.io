@@ -37,3 +37,8 @@ Removes the coverage directory.
 - Accessibility is covered with [jest-axe](https://github.com/nickcolley/jest-axe).
 
 - The applications pipeline is configured by `.github/main.yml` using [gh-pages](https://github.com/tschaub/gh-pages) and GitHub [actions](https://docs.github.com/en/actions).
+
+
+## Icons
+<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Ivan Abirawa - Flaticon</a>
+<a href="https://www.freepik.com/">Icon by Freepik</a>
