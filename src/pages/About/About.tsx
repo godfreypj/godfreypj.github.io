@@ -34,25 +34,18 @@ export default function About() {
           </div>
         </div>
       </div>
+      <div className="flex p-10 m-10 bg-gradient-to-r from-secondary to-secondary-focus rounded-3xl">
+        <ul className="steps">
+          <li className="step w-60 step-neutral prose prose-lg">College</li>
+          <li className="step w-60 step-neutral prose prose-lg">U.S. Navy</li>
+          <li className="step w-60 step-neutral prose prose-lg">Guam</li>
+          <li className="step w-60 step-neutral prose prose-lg">Boston</li>
+        </ul>
+      </div>
       <div
         data-testid="about-skills"
         className="flex mt-10"
       >
-        <div className="card w-96 bg-primary text-primary-content m-8">
-          <div className="card-body p-6">
-            <h2 className="card-title prose prose-xl">Python</h2>
-            <p className="flex items-center prose prose-md">
-              Back-end Flask apps; MFE architecture.
-            </p>
-            <div className="card-actions justify-end ml-auto w-20">
-              <img
-                src={python}
-                alt="python icon"
-                className="w-14"
-              />
-            </div>
-          </div>
-        </div>
         <div className="card w-96 bg-primary text-primary-content m-8">
           <div className="card-body p-6">
             <h2 className="card-title prose prose-xl">Web Dev</h2>
@@ -78,6 +71,21 @@ export default function About() {
               <img
                 src={java}
                 alt="java icon"
+                className="w-14"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-primary text-primary-content m-8">
+          <div className="card-body p-6">
+            <h2 className="card-title prose prose-xl">Python</h2>
+            <p className="flex items-center prose prose-md">
+              Back-end Flask apps; MFE architecture.
+            </p>
+            <div className="card-actions justify-end ml-auto w-20">
+              <img
+                src={python}
+                alt="python icon"
                 className="w-14"
               />
             </div>

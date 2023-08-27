@@ -5,7 +5,11 @@ const tailwindcssType = require('@tailwindcss/typography');
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        circuit: "url('./assets/circuit.jpg')",
+      },
+    },
   },
   daisyui: {
     themes: ['light', 'dark', 'pastel', 'dracula'],
