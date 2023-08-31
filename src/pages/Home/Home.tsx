@@ -1,21 +1,25 @@
 import './Home.css';
 import InstaCard from 'components/Social/InstaCard';
 import ThreadsCard from 'components/Social/ThreadsCard';
-import cityImage from '../assets/city.jpg';
+import cityImage from '../../assets/city.jpg';
 
 export default function Home() {
   return (
     <div
       className="flex flex-col home-container"
       role="main"
+      data-testid="home-container"
     >
       <div
         className="hero min-h-screen hero-height"
         style={{
           backgroundImage: `url(${cityImage})`,
         }}
+        data-testid="hero-banner"
+        role="img"
+        aria-label="cityscape background image"
       >
-        <div className="hero-overlay bg-opacity-60" />
+        <div className="hero-overlay bg-opacity-60" data-testid="hero-overlay" />
         <div className="hero-content text-left text-neutral-content">
           <div className="max-w-xl">
             <h1 className="mb-5 text-5xl font-bold">Welcome</h1>
@@ -28,12 +32,13 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-full card bg-base-300 rounded-box place-items-center">
-        <div className="collapse bg-base-200">
+        <div className="collapse bg-base-200" data-testid="collapse-bar">
           <input
+            role="checkbox"
             aria-label="collapse bar"
             type="checkbox"
           />
-          <div className="collapse-title text-xl text-neutral-focus">Featured Projects</div>
+          <div className="collapse-title text-xl text-neutral-focus" role="navigation">Featured Projects</div>
           <div className="collapse-content">
             <div className="join join-vertical lg:join-horizontal">
               <button
@@ -57,27 +62,37 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="main-text-content">
+        <div className="main-text-content" role="article" data-testid="main-content">
           Thanks for stopping by. Above you will find some personal projects; my apps come from
           fun, school & divine inspiration. Feel free to browse the blog where you can read about
           dumb stuff I feel compelled to share with the world.
         </div>
       </div>
       <div className="divider" />
-      <div className="card lg:card-side bg-base-300 shadow-xl mt-1 p-0.5">
+      <div
+        className="card lg:card-side bg-base-300 shadow-xl mt-1 p-0.5"
+        data-testid="social-container"
+      >
         <div className="card-actions items-center justify-center m-7">
           <InstaCard url="https://www.instagram.com/p/CopLsLROmNx/" />
         </div>
         <div className="card-body">
-          <h2 className="card-title text-neutral-focus">Instagram</h2>
-          <p className="p-0 m-0">
+          <h2 className="card-title text-neutral-focus" role="heading">Instagram</h2>
+          <p className="p-0 m-0" role="article">
             I like to take pictures, and I post those pictures on Instagram. Take a look, if you
             feel like it.
           </p>
-          <h2 className="card-title text-neutral-focus pt-0 mt-0">Threads</h2>
-          <p>I am always saying something on here...</p>
+          <h2 className="card-title text-neutral-focus pt-0 mt-0" role="heading">Threads</h2>
+          <p role="article">I am always saying something on here...</p>
           <div className="w-full indicator justify-center">
-            <span className="indicator-item badge badge-secondary">typing…</span>
+            <span
+              className="indicator-item badge badge-secondary"
+              role="img"
+              aria-label="typing badge"
+            >
+              typing…
+
+            </span>
             <ThreadsCard url="https://www.threads.net/@phil.captures/post/Cv3fgMoMmwi/" />
           </div>
         </div>

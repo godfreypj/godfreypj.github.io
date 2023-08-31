@@ -4,14 +4,14 @@ import InstaCard from './InstaCard';
 import ThreadsCard from './ThreadsCard';
 
 // Components
-describe('Social cards render', () => {
-  test('Instagram Card menu renders', () => {
+describe('Social cards', () => {
+  test('Instagram Card renders', () => {
     // TODO hardcoded URL
     const { getAllByTestId } = render(<InstaCard url="https://www.instagram.com/p/CopLsLROmNx/" />);
     const instaFrame = getAllByTestId(/insta-frame/i);
     expect(instaFrame[0]).toBeInTheDocument();
   });
-  test('Threads Card menu renders', () => {
+  test('Threads Card renders', () => {
     // TODO hardcoded URL
     const { getAllByTestId } = render(
       <ThreadsCard url="https://www.threads.net/@phil.captures/post/Cv3fgMoMmwi/" />,
@@ -22,7 +22,7 @@ describe('Social cards render', () => {
 });
 
 // Accessibility
-test('Header renders without violations', async () => {
+test('Social Cards render without violations', async () => {
   await renderWithAccessibility(<InstaCard url="https://www.instagram.com/p/CopLsLROmNx/" />);
   await renderWithAccessibility(
     <ThreadsCard url="https://www.threads.net/@phil.captures/post/Cv3fgMoMmwi/" />,

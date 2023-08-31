@@ -6,7 +6,7 @@ module.exports = {
   testMatch: ['**/?(*.)+(test).{js,jsx,ts,tsx}'],
   collectCoverage: true,
   coverageReporters: ['html', 'lcov', 'text'],
-  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: ['./src/**'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.svg$': '<rootDir>/imageTransform.js',
@@ -32,5 +32,6 @@ module.exports = {
     'reportWebVitals.ts',
     'setupTests.ts',
     'a11yTestHelper.ts',
+    'App.tsx',
   ],
 };
