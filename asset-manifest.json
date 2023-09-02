@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e25ac0e2.css",
-    "main.js": "/static/js/main.e351ffbc.js",
+    "main.css": "/static/css/main.fa40bed9.css",
+    "main.js": "/static/js/main.4ec590eb.js",
     "static/media/city.jpg": "/static/media/city.ef2a76a6c610404207a0.jpg",
     "static/media/selfie.jpg": "/static/media/selfie.3b320127187b7a52b51f.jpg",
     "static/media/gpjLogo.png": "/static/media/gpjLogo.73bc46bca5ac94d79897.png",
@@ -11,11 +11,11 @@
     "static/media/instaLogo.svg": "/static/media/instaLogo.0dd482fa842bd7851f54ff91a01be94a.svg",
     "static/media/threadsLogo.svg": "/static/media/threadsLogo.c49fa0b2fa1886a69eac57dd2fc27f8f.svg",
     "index.html": "/index.html",
-    "main.e25ac0e2.css.map": "/static/css/main.e25ac0e2.css.map",
-    "main.e351ffbc.js.map": "/static/js/main.e351ffbc.js.map"
+    "main.fa40bed9.css.map": "/static/css/main.fa40bed9.css.map",
+    "main.4ec590eb.js.map": "/static/js/main.4ec590eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.e25ac0e2.css",
-    "static/js/main.e351ffbc.js"
+    "static/css/main.fa40bed9.css",
+    "static/js/main.4ec590eb.js"
   ]
 }
