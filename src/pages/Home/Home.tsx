@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </div>
       <div className="divider" />
-      <div className="shadow-xl rounded flex flex-col sm:flex-row h-full">
+      <div className="shadow-xl rounded flex flex-col sm:flex-row h-full" data-testid="social-container">
         <div className="p-4 lg:w-1/3">
           <h1 className="prose lg:prose-2xl text-center sm:text-left">Instagram</h1>
           <InstaCard url="https://www.instagram.com/p/CopLsLROmNx/" />

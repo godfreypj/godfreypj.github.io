@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -30,6 +30,7 @@ export default function Header() {
             type="button"
             tabIndex={0}
             className="btn btn-ghost lg:hidden"
+            data-testid="hamburger-menu-button"
             onClick={toggleDropdown}
           >
             <svg
