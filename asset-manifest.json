@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f174ea8.css",
-    "main.js": "/static/js/main.e5e44941.js",
+    "main.css": "/static/css/main.e25ac0e2.css",
+    "main.js": "/static/js/main.fd0f2dff.js",
     "static/media/city.jpg": "/static/media/city.ef2a76a6c610404207a0.jpg",
+    "static/media/selfie.jpg": "/static/media/selfie.3b320127187b7a52b51f.jpg",
     "static/media/gpjLogo.png": "/static/media/gpjLogo.73bc46bca5ac94d79897.png",
+    "static/media/python.png": "/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/java.png": "/static/media/java.e3bccc2a567d234e2886.png",
+    "static/media/html5.png": "/static/media/html5.fe270fb56f2a5fdc048d.png",
     "static/media/instaLogo.svg": "/static/media/instaLogo.0dd482fa842bd7851f54ff91a01be94a.svg",
     "static/media/threadsLogo.svg": "/static/media/threadsLogo.c49fa0b2fa1886a69eac57dd2fc27f8f.svg",
     "index.html": "/index.html",
-    "main.7f174ea8.css.map": "/static/css/main.7f174ea8.css.map",
-    "main.e5e44941.js.map": "/static/js/main.e5e44941.js.map"
+    "main.e25ac0e2.css.map": "/static/css/main.e25ac0e2.css.map",
+    "main.fd0f2dff.js.map": "/static/js/main.fd0f2dff.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f174ea8.css",
-    "static/js/main.e5e44941.js"
+    "static/css/main.e25ac0e2.css",
+    "static/js/main.fd0f2dff.js"
   ]
 }
