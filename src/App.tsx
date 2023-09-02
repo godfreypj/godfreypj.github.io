@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Header from './components/Header/Header';
@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 
 export default function App() {
   return (
-    <HashRouter>
+    <>
       <Header />
       <Routes>
         <Route
@@ -19,6 +19,6 @@ export default function App() {
         />
       </Routes>
       <Footer />
-    </HashRouter>
+    </>
   );
 }
