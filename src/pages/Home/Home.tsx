@@ -19,42 +19,52 @@ export default function Home() {
         role="img"
         aria-label="cityscape background image"
       >
-        <div className="hero-overlay bg-opacity-60" data-testid="hero-overlay" />
-        <div className="hero-content text-left text-neutral-content">
+        <div
+          className="hero-overlay bg-opacity-60"
+          data-testid="hero-overlay"
+        />
+        <div className="hero-content text-neutral-content">
           <div className="max-w-xl">
-            <h1 className="mb-5 text-5xl font-bold">Welcome</h1>
-            <p className="mb-1 text-neutral-50">I am a software engineer; mass native.</p>
-            <p className="mb-1 text-neutral-50">
+            <h1 className="mb-5 prose text-5xl font-bold">Welcome</h1>
+            <p className="mb-1 prose sm:prose-xl text-neutral-50">
               This is a spot for my projects, thoughts, and other stuff.
             </p>
-            <p className="mb-0 text-neutral-50">Enjoy.</p>
+            <p className="mb-0 prose sm:prose-xl text-neutral-50">Enjoy.</p>
           </div>
         </div>
       </div>
-      <div className="grid h-full card bg-base-300 rounded-box place-items-center">
-        <div className="collapse bg-base-200" data-testid="collapse-bar">
+      <div className="grid h-full card bg-primary rounded-box place-items-center">
+        <div
+          className="collapse"
+          data-testid="collapse-bar"
+        >
           <input
             role="checkbox"
             aria-label="collapse bar"
             type="checkbox"
           />
-          <div className="collapse-title text-xl text-neutral-focus" role="navigation">Featured Projects</div>
+          <div
+            className="collapse-title text-xl text-primary-content lg:text-left text-center"
+            role="navigation"
+          >
+            Featured Projects
+          </div>
           <div className="collapse-content">
-            <div className="join join-vertical lg:join-horizontal">
+            <div className="join join-horizontal">
               <button
-                className="btn btn-accent join-item"
+                className="btn btn-neutral join-item"
                 type="button"
               >
                 Sudoku
               </button>
               <button
-                className="btn btn-accent join-item"
+                className="btn btn-neutral join-item"
                 type="button"
               >
                 Scrabble
               </button>
               <button
-                className="btn btn-accent join-item"
+                className="btn btn-neutral join-item"
                 type="button"
               >
                 Pages
@@ -62,39 +72,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="main-text-content" role="article" data-testid="main-content">
-          Thanks for stopping by. Above you will find some personal projects; my apps come from
-          fun, school & divine inspiration. Feel free to browse the blog where you can read about
-          dumb stuff I feel compelled to share with the world.
-        </div>
       </div>
       <div className="divider" />
-      <div
-        className="card lg:card-side bg-base-300 shadow-xl mt-1 p-0.5"
-        data-testid="social-container"
-      >
-        <div className="card-actions items-center justify-center m-7">
+      <div className="shadow-xl rounded flex flex-col sm:flex-row h-full" data-testid="social-container">
+        <div className="p-4 lg:w-1/3">
+          <h1 className="prose lg:prose-2xl text-center sm:text-left">Instagram</h1>
           <InstaCard url="https://www.instagram.com/p/CopLsLROmNx/" />
         </div>
-        <div className="card-body">
-          <h2 className="card-title text-neutral-focus" role="heading">Instagram</h2>
-          <p className="p-0 m-0" role="article">
-            I like to take pictures, and I post those pictures on Instagram. Take a look, if you
-            feel like it.
-          </p>
-          <h2 className="card-title text-neutral-focus pt-0 mt-0" role="heading">Threads</h2>
-          <p role="article">I am always saying something on here...</p>
-          <div className="w-full indicator justify-center">
-            <span
-              className="indicator-item badge badge-secondary"
-              role="img"
-              aria-label="typing badge"
-            >
-              typing…
-
-            </span>
-            <ThreadsCard url="https://www.threads.net/@phil.captures/post/Cv3fgMoMmwi/" />
-          </div>
+        <div className="p-4 lg:w-2/3">
+          <h1 className="prose lg:prose-2xl text-center sm:text-left">Threads</h1>
+          <ThreadsCard url="https://www.threads.net/@phil.captures/post/CwbSPnLu-GP/" />
         </div>
       </div>
     </div>

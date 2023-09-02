@@ -27,9 +27,9 @@ describe('Footer Component', () => {
     const threadsLogo = component.getAllByTestId(/threads-logo/i);
     expect(threadsLogo[0]).toBeInTheDocument();
   });
-});
 
-// Accessibility
-test('renders without violations', async () => {
-  await renderWithAccessibility(<Footer />);
+  // Accessibility
+  test('renders without violations', async () => {
+    await renderWithAccessibility(<Footer />);
+  });
 });

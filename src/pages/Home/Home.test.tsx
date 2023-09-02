@@ -46,11 +46,6 @@ describe('Home Component', () => {
     expect(collapseBar).toBeInTheDocument();
   });
 
-  test('renders main content', () => {
-    const mainContent = component.getByTestId('main-content');
-    expect(mainContent).toBeInTheDocument();
-  });
-
   test('renders social container', () => {
     const socialContainer = component.getByTestId('social-container');
     expect(socialContainer).toBeInTheDocument();
