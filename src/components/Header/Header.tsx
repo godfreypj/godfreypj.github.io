@@ -112,7 +112,7 @@ export default function Header() {
           >
             <a
               tabIndex={0}
-              href="/about"
+              href="#/about"
             >
               About
             </a>
