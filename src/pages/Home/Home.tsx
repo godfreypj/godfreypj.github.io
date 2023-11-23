@@ -50,7 +50,7 @@ export default function Home() {
           >
             Featured Projects
           </div>
-          <div className="collapse-content">
+          <div className="collapse-content lg:text-left text-center">
             <div className="join join-horizontal">
               <button
                 className="btn btn-neutral join-item"
@@ -75,12 +75,15 @@ export default function Home() {
         </div>
       </div>
       <div className="divider" />
-      <div className="shadow-xl rounded flex flex-col sm:flex-row h-full" data-testid="social-container">
+      <div
+        className="shadow-xl rounded flex flex-col lg:flex-row h-full"
+        data-testid="social-container"
+      >
         <div className="p-3 lg:w-1/3">
           <h1 className="prose lg:prose-2xl text-center sm:text-left">Instagram</h1>
           <InstaCard url="https://www.instagram.com/p/CopLsLROmNx/" />
         </div>
-        <div className="p-4 lg:w-2/3">
+        <div className="lg:p-4 lg:w-2/3">
           <h1 className="prose lg:prose-2xl text-center sm:text-left">Threads</h1>
           <ThreadsCard url="https://www.threads.net/@phil.captures/post/CwbSPnLu-GP/" />
         </div>
