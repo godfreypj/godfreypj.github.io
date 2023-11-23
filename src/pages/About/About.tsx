@@ -3,14 +3,13 @@ import python from '../../assets/python.png';
 import html5 from '../../assets/html5.png';
 import java from '../../assets/java.png';
 import cpp from '../../assets/cpp.png';
-import './About.css';
 
 export default function About() {
   return (
-    <div role="main">
+    <>
       <div
         className="flex flex-row lg:h-16 rounded bg-gradient-to-l
-                 from-accent to-neutral-focus hover:bg-gradient-to-r"
+                from-accent to-neutral-focus hover:bg-gradient-to-r"
         data-testid="about-title-bar"
         role="document"
       >
@@ -138,6 +137,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import './Home.css';
 import InstaCard from 'components/Social/InstaCard';
 import ThreadsCard from 'components/Social/ThreadsCard';
+import About from '../About/About';
 import cityImage from '../../assets/city.jpg';
 
 export default function Home() {
@@ -84,6 +85,7 @@ export default function Home() {
           <ThreadsCard url="https://www.threads.net/@phil.captures/post/CwbSPnLu-GP/" />
         </div>
       </div>
+      <About />
     </div>
   );
 }
