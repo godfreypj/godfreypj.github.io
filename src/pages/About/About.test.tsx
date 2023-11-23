@@ -16,6 +16,10 @@ describe('About Component', () => {
 
   // Accessibility
   test('renders without violations', async () => {
-    await renderWithAccessibility(<About />);
+    await renderWithAccessibility(
+      <div role="main">
+        <About />
+      </div>,
+    );
   });
 });
