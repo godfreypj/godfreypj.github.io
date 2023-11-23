@@ -3,6 +3,7 @@ export default function Header() {
     <div className="navbar bg-base-100">
       <div
         className="navbar-start"
+        data-testid="godfrey-icon"
         role="navigation"
       >
         <div role="menu">
