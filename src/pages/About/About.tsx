@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <div
-        className="flex flex-row lg:h-16 rounded bg-gradient-to-l
+        className="flex flex-row lg:h-16 mt-10 rounded bg-gradient-to-l
                 from-accent to-neutral-focus hover:bg-gradient-to-r"
         data-testid="about-title-bar"
         role="document"
@@ -82,11 +82,11 @@ export default function About() {
             <p className="lg:flex items-center prose sm:block hidden">
               React applications & java/spring back-ends.
             </p>
-            <div className="card-actions lg:justify-end justify-center pb-6 ml-auto w-20">
+            <div className="card-actions lg:justify-end justify-center pb-3 ml-auto w-20">
               <img
                 src={html5}
                 alt="html5 icon"
-                className="lg:w-14 w-10"
+                className="lg:w-14 w-10 h-10"
               />
             </div>
           </div>
