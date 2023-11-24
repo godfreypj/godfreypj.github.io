@@ -9,7 +9,7 @@ export default function Selfie() {
       role="document"
     >
       <article
-        className="prose flex-grow font-bold lg:text-base pl-1 pt-4 lg:pl-20 p-0 m-0 text-xs"
+        className="prose flex-grow font-bold lg:text-base lg:pl-20 lg:pt-4 pl-2 pt-9 text-xs"
         data-testid="about-quote"
         role="document"
       >
