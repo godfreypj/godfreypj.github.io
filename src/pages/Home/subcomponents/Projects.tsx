@@ -22,19 +22,37 @@ export default function Projects() {
               className="btn btn-neutral join-item"
               type="button"
             >
-              Sudoku
+              <a
+                target="_blank"
+                href="https://github.com/godfreypj/intro-to-ai/tree/dev/sudoku_solver"
+                rel="noreferrer"
+              >
+                Sudoku
+              </a>
             </button>
             <button
               className="btn btn-neutral join-item"
               type="button"
             >
-              Scrabble
+              <a
+                target="_blank"
+                href="https://github.com/godfreypj/intro-to-ai/tree/dev/the_right_move"
+                rel="noreferrer"
+              >
+                Scrabble
+              </a>
             </button>
             <button
               className="btn btn-neutral join-item"
               type="button"
             >
-              Pages
+              <a
+                target="_blank"
+                href="https://github.com/godfreypj/godfreypj.github.io"
+                rel="noreferrer"
+              >
+                Pages
+              </a>
             </button>
           </div>
         </div>
