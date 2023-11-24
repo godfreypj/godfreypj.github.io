@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="max-w-xl">
           <h1 className="mb-5 prose text-5xl font-bold">Welcome</h1>
           <p className="mb-1 prose sm:prose-xl text-neutral-50">
-            This is a spot for my projects, thoughts, and other stuff.
+            This is a spot for some info about me & my projects.
           </p>
           <p className="mb-0 prose sm:prose-xl text-neutral-50">Enjoy.</p>
         </div>
