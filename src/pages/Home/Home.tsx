@@ -14,9 +14,9 @@ export default function Home() {
     >
       <Hero />
       <Projects />
+      <About />
       <div className="divider" />
       <Social />
-      <About />
     </div>
   );
 }
