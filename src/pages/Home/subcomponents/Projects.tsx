@@ -18,42 +18,30 @@ export default function Projects() {
         </div>
         <div className="collapse-content lg:text-left text-center">
           <div className="join join-horizontal">
-            <button
+            <a
+              target="_blank"
+              href="https://github.com/godfreypj/intro-to-ai/tree/dev/sudoku_solver"
+              rel="noreferrer"
               className="btn btn-neutral join-item"
-              type="button"
             >
-              <a
-                target="_blank"
-                href="https://github.com/godfreypj/intro-to-ai/tree/dev/sudoku_solver"
-                rel="noreferrer"
-              >
-                Sudoku
-              </a>
-            </button>
-            <button
+              Sudoku
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/godfreypj/intro-to-ai/tree/dev/the_right_move"
+              rel="noreferrer"
               className="btn btn-neutral join-item"
-              type="button"
             >
-              <a
-                target="_blank"
-                href="https://github.com/godfreypj/intro-to-ai/tree/dev/the_right_move"
-                rel="noreferrer"
-              >
-                Scrabble
-              </a>
-            </button>
-            <button
+              Scrabble
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/godfreypj/godfreypj.github.io"
+              rel="noreferrer"
               className="btn btn-neutral join-item"
-              type="button"
             >
-              <a
-                target="_blank"
-                href="https://github.com/godfreypj/godfreypj.github.io"
-                rel="noreferrer"
-              >
-                Pages
-              </a>
-            </button>
+              Pages
+            </a>
           </div>
         </div>
       </div>
