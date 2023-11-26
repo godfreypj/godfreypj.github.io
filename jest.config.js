@@ -33,5 +33,6 @@ module.exports = {
     'setupTests.ts',
     'a11yTestHelper.ts',
     'App.tsx',
+    '*.json',
   ],
 };
