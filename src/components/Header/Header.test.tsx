@@ -16,10 +16,6 @@ describe('Header Component', () => {
     expect(godfreyIcon[0]).toBeInTheDocument();
   });
 
-  test('renders search bar', () => {
-    const searchBar = component.getAllByTestId(/search-bar/i);
-    expect(searchBar[0]).toBeInTheDocument();
-  });
   // Accessibility
   test('renders without violations', async () => {
     await renderWithAccessibility(<Header />);

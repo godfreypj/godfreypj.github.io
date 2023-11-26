@@ -1,5 +1,4 @@
 import Selfie from './subcomponents/Selfie';
-import Timeline from './subcomponents/Timeline';
 import ExpCard from './subcomponents/ExpCard';
 import python from '../../assets/python.png';
 import html5 from '../../assets/html5.png';
@@ -9,9 +8,8 @@ import cpp from '../../assets/cpp.png';
 export default function About() {
   return (
     <>
-      <Selfie />
-      <div className="flex justify-center">
-        <Timeline />
+      <div className="flex justify-center mb-8">
+        <Selfie />
       </div>
       <div
         data-testid="about-skills"
