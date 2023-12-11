@@ -33,7 +33,7 @@ export default function About() {
         />
         <ExpCard
           title="C++"
-          description="C++ for embedded systems."
+          description="Embedded C++ and simulated systems."
           icon={cpp}
         />
       </div>

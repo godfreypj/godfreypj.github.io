@@ -8,7 +8,7 @@ interface ExpCardProps {
 
 const ExpCard: React.FC<ExpCardProps> = function ExpCardComponent({ title, description, icon }) {
   return (
-    <div className="card lg:w-96 lg:h-full sm:w-20 bg-primary text-primary-content m-2 h-20 w-20 items-center">
+    <div className="card lg:w-96 lg:h-fit sm:w-20 bg-primary text-primary-content m-2 h-20 w-20 items-center">
       <div className="card-body p-6">
         <h2 className="card-title prose lg:prose-xl sm:block hidden">{title}</h2>
         <p className="lg:flex items-center prose sm:block hidden">{description}</p>
